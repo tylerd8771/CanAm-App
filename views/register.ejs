@@ -1,0 +1,125 @@
+<%  include partials/header %>
+
+<div class="container">
+	<header class="jumbotron text-center">
+		<h1>Registration</h1>
+		<p>The free agent list will be updated every Monday, Wednesday and Friday night.</p>
+		<button type="button" class="btn btn-default btn-md" style="width: 30%;" id="myBtn">Register</button>
+		<button type="button" class="btn btn-default btn-md" style="width: 30%;" id="myBtn2">Registered List</button>
+
+		<!--Register-->
+		<div class="container">
+			<!--Register Modal-->
+			<div class="modal fade" id="myModal" role="dialog">
+				<div class="modal-dialog">
+					
+					<!--Modal Content-->
+					<div class="modal-content">
+						<div class="modal-header" style="padding:35px 50px;">
+							<button type="button" class="close" data-dismiss="modal">&times;</button>
+							<h2><span class="glyphicon glyphicon-pencil"></span> Register</h2>
+						</div>
+						<div class="modal-body" style="padding:40px 50px;">
+							<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSeY2Yg9Mq6YSpXez-eWlqYBriLuj_sj8nxitjuXF3PbBLPdqg/viewform?embedded=true" width="480" height="400" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+
+		<!--Registered Players-->
+		<div class="container">
+			<div class="modal fade" id="myModal2" role="dialog">
+				<div class="modal-dialog">
+					
+					<div class="modal-content">
+						<div class="modal-header" style="padding: 35px 50px;">
+							<button type="button" class="close" data-dismiss="modal">&times;</button>
+							<h2><span class="glyphicon glyphicon-user"></span> Registered List</h2>
+						</div>
+						<div class="modal-body" style="padding: 40px 50px;"> 
+							<table class="table table-bordered">
+								<thead>
+									<tr>
+										<th>Gamertag</th>
+										<th>Primary Position</th>
+										<th>Secondary Position(s)</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>TYLERisGOD69</td>
+										<td>Right Wing</td>
+										<td>C, LW, LD, RD</td>
+									</tr>
+									<tr>
+										<td>WHOSyurDADDY69</td>
+										<td>Goalie</td>
+										<td>NONE</td>
+									</tr>
+									<tr>
+										<td></td>
+										<td></td>
+										<td></td>
+									</tr>
+									<tr>
+										<td></td>
+										<td></td>
+										<td></td>
+									</tr>
+									<tr>
+										<td></td>
+										<td></td>
+										<td></td>
+									</tr>
+									<tr>
+										<td></td>
+										<td></td>
+										<td></td>
+									</tr>
+									<tr>
+										<td></td>
+										<td></td>
+										<td></td>
+									</tr>
+									<tr>
+										<td></td>
+										<td></td>
+										<td></td>
+									</tr>
+									<tr>
+										<td></td>
+										<td></td>
+										<td></td>
+									</tr>
+									<tr>
+										<td></td>
+										<td></td>
+										<td></td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>	
+	</header>
+
+	
+	
+</div>
+<script>
+$(document).ready(function(){
+    $("#myBtn").click(function(){
+        $("#myModal").modal();
+    });
+});
+
+$(document).ready(function(){
+    $("#myBtn2").click(function(){
+        $("#myModal2").modal();
+    });
+});
+</script>
