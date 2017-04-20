@@ -1,0 +1,99 @@
+<% include partials/header %>
+
+<div class="container">
+	<header class="jumbotron text-center">
+		<h1>Rules and Regulations</h1>
+	</header>
+
+	<div class="container">
+		<ul class="nav nav-tabs">
+			<li class="active"><a href="#all">General</a></li>
+			<li><a href="#lagouts">Lag Outs</a></li>
+			<li><a href="#gm_rules">GM Rules</a></li>
+			<li><a href="#player_rules">Player Rules</a></li>
+			<li><a href="#stats">Stats</a></li>
+			<li><a href="#trades_FA">Trades / Free Agents</a></li>
+		</ul>
+
+		<div class="tab-content">
+			<div id="all" class="tab-pane fade in active">
+				<h1>General Rules</h1>
+				<ul class="list-group">
+					<li class="list-group-item active"><strong><em>1: </em></strong>Each team will be made up of AT LEAST 12 players. (
+					Not including GM and AGM) </li>
+					<li class="list-group-item"><strong><em>2: </em></strong>Games will be played at 9:00pm and 9:45pm every Monday, 
+					Tuesday and Thursday night.  </li>
+					<li class="list-group-item"><strong><em>3: </em></strong>Games can be rescheduled if approved by TYLERisGOD69</li>
+					<li class="list-group-item"><strong><em>4: </em></strong>The initial registration deadline is May 3rd.</li>
+					<li class="list-group-item"><strong><em>5: </em></strong>Everyone who registers after the deadline will be a Free 
+					Agent. (Please see Trades/Free Agents tab for more) </li>
+				</ul>
+			</div>
+
+			<div id="lagouts" class="tab-pane fade in">
+				<h1>Lag Outs</h1>
+				<ul class="list-group">
+					<li class="list-group-item active"><strong><em>1: </em></strong>If a skater lags out, finish the period then quit. 
+					The game will resume at the start of the next period. When play resumes the skater who lagged out must take a 
+					penalty. If the same skater lags out again, finish the game with a CPU.</li>
+					
+					<li class="list-group-item"><strong><em>2: </em></strong>If a goalie lags out before the 10 minute mark, quit 
+					immediately and start the period over. If a goalie lags out after the 10 minute mark, finish the period then quit. 
+					If the same goalie lags out for a second time, the GM's of the teams playing must reschedule. All rescheduled 
+					games 
+					must be played within 48 hours.</li>
+					
+					<li class="list-group-item"><strong><em>3: If a GM is caught abusing these rules they will lose their GM status 
+					and possibly be banned.</em></strong></li>
+					
+				</ul>
+			</div>
+
+			<div id="gm_rules" class="tab-pane fade in">
+				<h1>GM Rules</h1>
+				<ul class="list-group">
+					<li class="list-group-item active"><strong><em>1: </em></strong>GM's are expected to have their team ready to play at least 5 minutes before game time. If something happens that prevent a GM from being ready on time, let TYLERisGOD69 and the GM of the other team know IMMEDIATELY.</li>
+					<li class="list-group-item"><strong><em>2: </em></strong>If you are drafted a player that you don't like, too bad. If you refuse to play that player, you will lose your GM status.</li>
+					<li class="list-group-item"><strong><em>3: </em></strong>You must start everyone on your roster at least 1 game per week. If a player is unable to play (vacation, ps4 blows up, abducted by aliens) then you must let TYLERisGOD69 know.</li>
+				</ul>
+			</div>
+			<div id="player_rules" class="tab-pane fade in">
+				<h1>Player Rules</h1>
+				<ul class="list-group">
+					<li class="list-group-item active"><strong><en>1:</en></strong>If you are drafted to a team that you don't like, suck it up. </li>
+					<li class="list-group-item"><strong><em>2: </em></strong>If you refuse to play because you don't like your team, you will be banned. </li>
+					<li class="list-group-item"><strong><em>3: </em></strong>If you play poorly so your GM trades you, I will deny the trade and you will be banned.</li>
+					<li class="list-group-item"><strong><em>4: </em></strong>If you are traded then you must leave your former team's chats as soon as possible. If you refuse to play for the team you are traded to, you will be banned. </li>
+					<li class="list-group-item"><strong><em>5: </em></strong>If you are unable to play a game that you are scheduled for, let your GM know as soon as possible. </li>
+				</ul>
+			</div>
+			<div id="stats" class="tab-pane fade in">
+				<h1>Game Stats</h1>
+				<ul class="list-group">
+					<li class="list-group-item active"><strong><em>1: </em></strong>At the end of the game, GM's must take a screenshot of the stats. See examples below:</li>
+					<li class="list-group-item"><strong><em>2: </em></strong>GM's have 24 hours to send the stat screenshots to TYLERisGOD69. If the GM doesn't send the screenshots then his teams stats won't be entered, simple as that.  </li>
+				</ul>
+			</div>
+			
+			<div id="trades_FA" class="tab-pane fade in">
+				<h1>Trades and Free Agents</h1>
+				<ul class="list-group">
+					<li class="list-group-item active"><strong><em>1: </em></strong>Anyone who registers after the initial deadline will be placed on the free agent list. </li>
+					<li class="list-group-item"><strong><em>2: </em></strong>The free agent list will be updated every Monday, Wednesday and Friday night before 3am EST. There will be NO exceptions to this rule. </li>
+					<li class="list-group-item"><strong><em>3: </em></strong>Free agents are ineligible to start in a game the same day that they are signed. </li>
+					<li class="list-group-item"><strong><em>4: </em></strong>All trades must be approved by TYLERisGOD69. </li>
+					<li class="list-group-item"><strong><em>5: </em></strong>Teams can only trade two (2) times per week. </li>
+				</ul>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+<script>
+$(document).ready(function(){
+    $(".nav-tabs a").click(function(){
+        $(this).tab('show');
+    });
+});
+</script> 

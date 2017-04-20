@@ -9,14 +9,13 @@
 		<div class="row">
 			<div class="col-md-4">
 				<div class="page-header">
-					<h3>CanAmerican Hockey</h3>
+					<h3>CanAmerican Hockey</h3> 
 				</div>
 				<div class="list-group">
-					<a href="#" class="list-group-item active">CANAM Hockey
-				    <a href="#" class="list-group-item">Donate</a>
-				    <a href="#" class="list-group-item">Black List</a>
-				    <a href="#" class="list-group-item">Player Complaints</a>
-				    <a href="#" class="list-group-item">Apply For Expansion Team</a>
+					<button type="button" class="list-group-item" id="myBtn1">Donate</button>
+					<button type="button" class="list-group-item" id="myBtn2">Complain</button>
+					<button type="button" class="list-group-item" id="myBtn3">Suggestion</button>
+					<button type="button" class="list-group-item" id="myBtn4">Blacklisted Players</button> 
 				</div>
 			</div>
 			<div class="col-md-8">
@@ -83,10 +82,119 @@
 					</div>
 				</div>
 			</div>
+			<div class="container">
+
+				<!--///////DONATE\\\\\\-->
+				<div class="modal fade" id="myModal1" role="dialog">
+					<div class="modal-dialog">
+						
+						<!--Modal Content-->
+						<div class="modal-content">
+							<div class="modal-header" style="padding: 25px 30px;">
+								<button type="button" class="close" data-dismiss="modal">&times;</button>
+								<h2>Donate</h2>
+							</div>
+							<div class="modal-body">
+								<p>A donation link will be posted soon!</p>
+							</div>
+							<div class="modal-footer">
+								<button type="submit" class="btn btn-danger btn-default pull-left" data-dismiss="modal"><span class="glyphicon glyphicon-remove"></span> Cancel</button>
+							</div>
+						</div>
+					</div>
+				</div>
+
+
+				<!--///////COMPLAINT\\\\\\-->
+				<div class="modal fade" id="myModal2" role="dialog">
+					<div class="modal-dialog">	
+						<!--Modal Content-->
+						<div class="modal-content">
+							<div class="modal-header" style="padding: 25px 30px;">
+								<button type="button" class="close" data-dismiss="modal">&times;</button>
+								<h2>Submit A Complaint</h2>
+							</div>
+							<div class="modal-body" style="padding:35px 50px;">
+								<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfeP-WSS05hTB89r8_I-10Zb3IEKAmOlqStxs9gDeOo1sA2LQ/viewform?embedded=true" width="500" height="400" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe>
+							</div>
+							<div class="modal-footer">
+								<button type="submit" class="btn btn-danger btn-default pull-left" data-dismiss="modal"><span class="glyphicon glyphicon-remove"></span> Cancel</button>
+							</div>
+						</div>
+					</div>
+				</div>
+
+
+
+				<!--///////SUGGESTION\\\\\\-->
+				<div class="modal fade" id="myModal3" role="dialog">
+					<div class="modal-dialog">
+						<!--Modal Content-->
+						<div class="modal-content">
+							<div class="modal-header" style="padding: 25px 30px;">
+								<button type="button" class="close" data-dismiss="modal">&times;</button>
+								<h2>Suggestions</h2>
+							</div>
+							<div class="modal-body" style="padding:35px 50px;">
+								<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSe4KoIuJ3hGqeUVoUPibqgQgU4Hi1pbOaJ_HThJALg2L6XD-A/viewform?embedded=true" width="500" height="400" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe>
+							</div>
+							<div class="modal-footer">
+								<button type="submit" class="btn btn-danger btn-default pull-left" data-dismiss="modal"><span class="glyphicon glyphicon-remove"></span> Cancel</button>
+							</div>
+						</div>
+					</div>
+				</div> 
+
+
+				<!--///////BLACKLISTED PLAYERS\\\\\\-->
+				<div class="modal fade" id="myModal4" role="dialog">
+					<div class="modal-dialog">
+						<!--Modal Content-->
+						<div class="modal-content">
+							<div class="modal-header" style="padding: 25px 30px;">
+								<button type="button" class="close" data-dismiss="modal">&times;</button>
+								<h2>Blacklisted Players (Banned List)</h2>
+							</div>
+							<div class="modal-body">
+								<ul class="list-group">
+									<li class="list-group-item active">KingYoda</li>
+								</ul>
+							</div>
+							<div class="modal-footer">
+								<button type="submit" class="btn btn-danger btn-default pull-left" data-dismiss="modal"><span class="glyphicon glyphicon-remove"></span> Cancel</button>
+							</div>
+						</div>
+					</div>
+				</div>
+
 		</div>
 	</div>
 </div>
+<script>
+$(document).ready(function(){
+    $("#myBtn1").click(function(){
+        $("#myModal1").modal();
+    });
+});
 
+$(document).ready(function(){
+    $("#myBtn2").click(function(){
+        $("#myModal2").modal();
+    });
+});
+
+$(document).ready(function(){
+    $("#myBtn3").click(function(){
+        $("#myModal3").modal();
+    });
+});
+
+$(document).ready(function(){
+    $("#myBtn4").click(function(){
+        $("#myModal4").modal();
+    });
+});
+</script>
 
 
 
