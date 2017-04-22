@@ -25,10 +25,7 @@ colors.setTheme({
 	error: 'red'
 });
 
-//TESTING ROUTES
-app.get("/TEST", function(req, res){
-	res.render("TEST");
-});
+
 
 
  // Main Routes  \\
@@ -58,44 +55,44 @@ app.get("/register", function(req, res){
  // Team Pages \\
 // ===========  \\
 app.get("/teams/Anaheim", function(req, res){
-	res.render("teams/Anaheim")
-})
+	res.render("teams/Anaheim");
+});
 
 app.get("/teams/Arizona", function(req, res){
-	res.render("teams/Arizona")
-})
+	res.render("teams/Arizona");
+});
 
 app.get("/teams/Boston", function(req, res){
-	res.render("teams/Boston")
-})
+	res.render("teams/Boston");
+});
 
 app.get("/teams/Carolina", function(req, res){
-	res.render("teams/Carolina")
-})
+	res.render("teams/Carolina");
+});
 
 app.get("/teams/Chicago", function(req, res){
-	res.render("teams/Chicago")
-})
+	res.render("teams/Chicago");
+});
 
 app.get("/teams/Dallas", function(req, res){
-	res.render("teams/Dallas")
-})
+	res.render("teams/Dallas");
+});
 
 app.get("/teams/Pittsburgh", function(req, res){
-	res.render("teams/Pittsburgh")
-})
+	res.render("teams/Pittsburgh");
+});
 
 app.get("/teams/Toronto", function(req, res){
-	res.render("teams/Toronto")
-})
+	res.render("teams/Toronto");
+});
 
 app.get("/teams/Detroit", function(req, res){
-	res.render("teams/Detroit")
-})
+	res.render("teams/Detroit");
+});
 
 app.get("/teams/Edmonton", function(req, res){
-	res.render("teams/Edmonton")
-})
+	res.render("teams/Edmonton");
+});
 
  // Standings Pages\\
 //==================\\
