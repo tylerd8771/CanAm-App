@@ -1,11 +1,11 @@
 var express             = require("express"),
     app                 = express(),
     bodyParser          = require("body-parser"),
-    colors              = require("colors"),
+    colors              = require("colors")
    
    //Comment these out when switching over to Cloud9
-    path				= require("path"),
-    port 				= 3000
+    // path				= require("path"),
+    // port 				= 3000
     
 app.use(bodyParser.json());    
 app.use(bodyParser.urlencoded({extended: true}));
@@ -125,8 +125,8 @@ app.get("/stats/goalie_stats", function(req, res){
 
 
 
-app.listen(3000);
-console.log("The Server Is Running");
-// app.listen(process.env.PORT, process.env.IP, function(){
-//     console.log(colors.warn("The Server Has Been Started!"));
-// });
+// app.listen(3000);
+// console.log("The Server Is Running");
+app.listen(process.env.PORT, process.env.IP, function(){
+    console.log(colors.warn("The Server Has Been Started!"));
+});
