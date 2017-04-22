@@ -1,4 +1,64 @@
-<% include ../partials/header %>
+<link rel="stylesheet" href="/stylesheets/main.css">
+
+<nav clas="navbar navbar-default" style="background-color: #fff;">
+	<div class="container-fluid">
+		<div class="navbar-header">
+			<a class="navbar-left" href="../league_news"><img src="../navlogos/toronto.png" alt="arilogo"></a>
+		</div>
+	</div>
+</nav>
+
+
+
+
+<% include ../partials/teamheader %>
+<style>
+	
+	.jumbotron {
+		background-color: #172A4D;
+		color: #fff;
+		border-bottom: 3px solid #;
+	}
+
+	.page-header {
+		border-bottom: 3px solid #172A4D;
+	}
+	
+	.nav-tabs {
+		background-color: #ccc;
+		border: 3px solid #172A4D;
+	}
+
+	.nav-tabs li a{
+		color: #172A4D;
+		font-weight: bold;
+	}
+	.nav-tabs > li > a:hover {
+  		background-color: #172A4D;
+  		font-weight: bold;
+  		color: #fff;
+  		border: none;
+
+	}
+	.nav-tabs > li.active > a,
+	.nav-tabs > li.active > a:hover,
+	.nav-tabs > li.active > a:focus {
+	  color: #fff;
+	  background-color: #172A4D;
+	  border: none;
+	  border-bottom: 2px solid #172A4D;
+	  cursor: default;
+	}
+
+
+	
+
+			
+</style>
+
+
+
+
 
 <div class="container">
 	<header class="jumbotron text-center">
@@ -6,7 +66,7 @@
 	</header>
 	
 	<div class="container">
-		<ul class="nav nav-pills nav-justified">
+		<ul class="nav nav-tabs nav-justified">
 			<li role="presentation" class="active"><a data-toggle="tab" href="#home">Team Home</a></li>
 			<li role="presentation"><a data-toggle="tab" href="#roster">Roster</a></li>
 			<li role="presentation"><a data-toggle="tab" href="#recent_games">Recent Games</a></li>
@@ -130,7 +190,7 @@
 								<td></td>
 								<td><a href="#">Team</a></td>
 								<td><a href="#">Team</a></td>
-								<td>0 : 0</td>
+								<td></td>
 							</tr>
 							<tr>
 								<td></td>
@@ -198,11 +258,11 @@
 			<div id="top_scorers" class="tab-pane fade">
 				<div class="container">
 					<header class="page-header">
-						<h3>Toronto s Top Scorers</h3>
+						<h3>Toronto's Top Scorers</h3>
 					</header>
 					<div class="media">
 						<div class="media-left">
-							<img src="../images/img_avatar1.png" alt="img_avatar1">
+							<img src="../images/skater1.png" alt="skater1">
 						</div>
 						<div class="media-body">
 							<h4 class="media-heading">No Stats Entered</h4>
@@ -211,7 +271,7 @@
 					</div>
 					<div class="media">
 						<div class="media-left">
-							<img src="../images/img_avatar2.png" alt="img_avatar2">
+							<img src="../images/skater2.png" alt="skater2">
 						</div>
 						<div class="media-body">
 							<h4 class="media-heading">No Stats Entered</h4>
@@ -220,7 +280,7 @@
 					</div>
 					<div class="media">
 						<div class="media-left">
-							<img src="../images/img_avatar3.png" alt="img_avatar3">
+							<img src="../images/skater3.png" alt="skater3">
 						</div>
 						<div class="media-body">
 							<h4 class="media-heading">No Stats Entered</h4>
@@ -242,7 +302,7 @@
 					</header>
 					<div class="media">
 						<div class="media-left">
-							<img src="../images/img_avatar1.png" alt="img_avatar1">
+							<img src="../images/skater1.png" alt="skater1">
 						</div>
 						<div class="media-body">
 							<h4 class="media-heading">No Stats Entered</h4>
@@ -251,7 +311,7 @@
 					</div>
 					<div class="media">
 						<div class="media-left">
-							<img src="../images/img_avatar2.png" alt="img_avatar2">
+							<img src="../images/skater2.png" alt="skater2">
 						</div>
 						<div class="media-body">
 							<h4 class="media-heading">No Stats Entered</h4>
@@ -260,7 +320,7 @@
 					</div>
 					<div class="media">
 						<div class="media-left">
-							<img src="../images/img_avatar3.png" alt="img_avatar3">
+							<img src="../images/skater3.png" alt="skater3">
 						</div>
 						<div class="media-body">
 							<h4 class="media-heading">No Stats Entered</h4>
